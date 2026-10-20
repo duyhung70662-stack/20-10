@@ -6785,13 +6785,13 @@ html.tiny-pc-beauty-v12 #uiverse-starfield #stars3 {
     text-shadow: 0 0 14px rgba(255, 164, 203, 0.98), 0 0 28px rgba(255, 110, 175, 0.75) !important;
 }
 
-/* Bouquet sitting at bottom on moon */
+/* Bouquet sitting near center, larger and well-fitted to frame */
 .reality-bouquet-wrap {
     position: absolute !important;
-    bottom: clamp(2px, 0.8vh, 12px) !important;
+    bottom: clamp(55px, 11vh, 105px) !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    width: min(78vw, 420px) !important;
+    width: min(88vw, 540px) !important;
     z-index: 5 !important;
     pointer-events: none;
     display: flex !important;
@@ -6801,11 +6801,20 @@ html.tiny-pc-beauty-v12 #uiverse-starfield #stars3 {
 .reality-bouquet-img {
     width: 100% !important;
     height: auto !important;
-    max-height: clamp(120px, 24vh, 180px) !important;
+    max-height: clamp(210px, 39vh, 300px) !important;
     object-fit: contain !important;
-    filter: drop-shadow(0 0 20px rgba(255, 160, 225, 0.45)) drop-shadow(0 0 10px rgba(160, 230, 255, 0.35)) !important;
+    filter: drop-shadow(0 0 25px rgba(255, 160, 225, 0.55)) drop-shadow(0 0 12px rgba(160, 230, 255, 0.4)) !important;
     animation: bouquetBloom 1.5s cubic-bezier(.16, .85, .25, 1) backwards !important;
     animation-delay: 0.4s !important;
+}
+@media (max-width: 600px) {
+    .reality-bouquet-wrap {
+        bottom: clamp(75px, 14vh, 145px) !important;
+        width: min(92vw, 480px) !important;
+    }
+    .reality-bouquet-img {
+        max-height: clamp(210px, 32vh, 320px) !important;
+    }
 }
 </style>
 </head>
